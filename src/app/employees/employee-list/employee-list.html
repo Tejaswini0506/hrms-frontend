@@ -1,0 +1,83 @@
+<div class="container mt-4">
+
+  <!-- HEADER -->
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="mb-0">Employees</h4>
+
+    <div class="d-flex align-items-center gap-2">
+      <!-- Role Switcher -->
+      <select
+        class="form-select"
+        style="width: 140px"
+        [(ngModel)]="role"
+        (ngModelChange)="setRole($event)"      >
+        <option value="USER">User</option>
+        <option value="ADMIN">Admin</option>
+      </select>
+
+      <!-- Role Badge -->
+      <span class="badge bg-secondary">
+        Role: {{ role }}
+      </span>
+
+      <!-- Add Employee (Admin only) -->
+      <a
+        routerLink="/add-employee"
+        class="btn btn-primary"
+        *ngIf="isAdmin"
+      >
+        + Add Employee
+      </a>
+    </div>
+  </div>
+
+  <!-- TABLE -->
+  <table class="table table-bordered table-hover align-middle">
+    <thead class="table-dark">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Department</th>
+      <th>Salary</th>
+      <th style="width: 180px">Actions</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let emp of employees">
+      <td>{{ emp.id }}</td>
+      <td>{{ emp.name }}</td>
+      <td>{{ emp.email }}</td>
+      <td>{{ emp.department }}</td>
+      <td>${{ emp.salary }}</td>
+
+      <td>
+        <a
+          [routerLink]="['/edit-employee', emp.id]"
+          class="btn btn-sm btn-warning me-2"
+          [class.disabled]="!isAdmin"
+          [attr.aria-disabled]="!isAdmin"
+          (click)="!isAdmin && $event.preventDefault()"
+        >
+          Edit
+        </a>
+
+        <button
+          class="btn btn-sm btn-danger"
+          [disabled]="!isAdmin"
+          (click)="deleteEmployee(emp.id!)"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <!-- EMPTY STATE -->
+  <div *ngIf="employees.length === 0" class="alert alert-info">
+    No employees found.
+  </div>
+
+</div>

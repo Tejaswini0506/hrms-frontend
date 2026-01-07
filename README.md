@@ -23,3 +23,6 @@ A mini Human Resource Management System built using Angular and Spring Boot.
 1. npm install
 2. ng serve
 3. Open http://localhost:4200
+
+## Backend Repository
+https://github.com/Tejaswini0506/hrms-backend

@@ -35,8 +35,7 @@ This application demonstrates role-based behavior at the UI level using a select
 - UI actions such as **Add, Edit, and Delete** are enabled or disabled based on the selected role.
 - This helps demonstrate how role-based access can be reflected in the user interface.
 
-> Note: Role enforcement in the frontend is for demonstration purposes only.  
-> Backend-level authorization using JWT and Spring Security will be implemented in a later phase.
+> Note: Role enforcement in the frontend is for demonstration purposes only.
 
 ## Screenshots
 ### Admin Role (Actions Enabled)

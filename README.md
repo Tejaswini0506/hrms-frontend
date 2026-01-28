@@ -1,59 +1,55 @@
-# HrmsFrontend
+# HRMS Frontend (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+Frontend application for a Human Resource Management System (HRMS) that enables role-based employee management through a clean and responsive user interface.
 
-## Development server
+## Overview
+This Angular application serves as the frontend for a full-stack HRMS platform, allowing administrators to manage employee data and users to view employee information through secure, role-based access.
 
-To start a local development server, run:
+## Tech Stack
+- Angular
+- TypeScript
+- Bootstrap
+- RESTful APIs
+- Git & GitHub
 
-```bash
+## Features
+- Role-based UI access (Admin / User)
+- Employee Create, Read, Update, Delete (CRUD) operations
+- Route protection using Angular Guards
+- Responsive UI using Bootstrap
+- Integration with Spring Boot backend APIs
+
+## User Roles
+- **Admin**
+  - Add new employees
+  - Edit employee details
+  - Delete employee records
+- **User**
+  - View employee information
+
+## Screenshots
+_Add screenshots here_
+
+
+## Architecture
+Angular UI
+↓
+Spring Boot REST APIs
+↓
+MySQL Database
+
+
+## How to Run Locally
+1. Clone the repository  
+2. Install dependencies  
+   ```bash
+   npm install
+   
+3. Start the application
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+4. Open in browser
+http://localhost:4200
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Backend Repository
+https://github.com/Tejaswini0506/hrms-backend

@@ -27,6 +27,17 @@ This Angular application serves as the frontend for a full-stack HRMS platform, 
 - **User**
   - View employee information
 
+## Role Handling (Frontend)
+
+This application demonstrates role-based behavior at the UI level using a selected role (Admin/User).
+
+- The selected role is stored in the frontend state.
+- UI actions such as **Add, Edit, and Delete** are enabled or disabled based on the selected role.
+- This helps demonstrate how role-based access can be reflected in the user interface.
+
+> Note: Role enforcement in the frontend is for demonstration purposes only.  
+> Backend-level authorization using JWT and Spring Security will be implemented in a later phase.
+
 ## Screenshots
 ### Admin Role (Actions Enabled)
 ![Employee List - Admin](screenshots/employee-list-admin.png)

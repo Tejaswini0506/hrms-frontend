@@ -28,7 +28,17 @@ This Angular application serves as the frontend for a full-stack HRMS platform, 
   - View employee information
 
 ## Screenshots
-_Add screenshots here_
+### Admin Role (Actions Enabled)
+![Employee List - Admin](screenshots/employee-list-admin.png)
+
+### User Role (Actions Disabled)
+![Employee List - User](screenshots/employee-list-user.png)
+
+### Add Employee
+![Add Employee](screenshots/add-employee.png)
+
+### Edit Employee
+![Edit Employee](screenshots/edit-employee.png)
 
 
 ## Architecture

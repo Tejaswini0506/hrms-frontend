@@ -1,28 +1,55 @@
-# HRMS Frontend
+# HRMS Frontend (Angular)
 
-A mini Human Resource Management System built using Angular and Spring Boot.
+Frontend application for a Human Resource Management System (HRMS) that enables role-based employee management through a clean and responsive user interface.
 
-## Features
-- Employee CRUD operations
-- Role-based UI access (Admin/User)
-- Route protection using guards
-- Clean, responsive UI
+## Overview
+This Angular application serves as the frontend for a full-stack HRMS platform, allowing administrators to manage employee data and users to view employee information through secure, role-based access.
 
 ## Tech Stack
 - Angular
-- Spring Boot
-- REST APIs
+- TypeScript
 - Bootstrap
+- RESTful APIs
 - Git & GitHub
 
-## Roles
-- Admin: Add, Edit, Delete employees
-- User: View employees
+## Features
+- Role-based UI access (Admin / User)
+- Employee Create, Read, Update, Delete (CRUD) operations
+- Route protection using Angular Guards
+- Responsive UI using Bootstrap
+- Integration with Spring Boot backend APIs
 
-## How to Run
-1. npm install
-2. ng serve
-3. Open http://localhost:4200
+## User Roles
+- **Admin**
+  - Add new employees
+  - Edit employee details
+  - Delete employee records
+- **User**
+  - View employee information
+
+## Screenshots
+_Add screenshots here_
+
+
+## Architecture
+Angular UI
+↓
+Spring Boot REST APIs
+↓
+MySQL Database
+
+
+## How to Run Locally
+1. Clone the repository  
+2. Install dependencies  
+   ```bash
+   npm install
+   
+3. Start the application
+ng serve
+
+4. Open in browser
+http://localhost:4200
 
 ## Backend Repository
 https://github.com/Tejaswini0506/hrms-backend
